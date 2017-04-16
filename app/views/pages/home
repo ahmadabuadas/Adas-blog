@@ -1,0 +1,2 @@
+<h1>My home Page</h1>
+<%= link_to 'alpha-blog',articles_path%> || <%=link_to 'about',about_path %>

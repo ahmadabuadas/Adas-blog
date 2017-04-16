@@ -1,0 +1,2 @@
+<h1>My About Page</h1>
+<%=link_to 'home',root_path %>
