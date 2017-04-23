@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 resources :articles
   # Example of regular route:
+  get 'signup', to:'users#new'
+  resources 'users', except: ['new']
   #   get 'products/:id' => 'catalog#view'
  root 'pages#home'
   get 'about' , to:'pages#about'
