@@ -8,6 +8,11 @@ resources :articles
   # Example of regular route:
   get 'signup', to:'users#new'
   resources 'users', except: ['new']
+  
+  get 'login', to:'sessions#new'
+  post 'login', to:'sessions#create'
+  delete 'login', to:'sessions#destroy'
+
   #   get 'products/:id' => 'catalog#view'
  root 'pages#home'
   get 'about' , to:'pages#about'
