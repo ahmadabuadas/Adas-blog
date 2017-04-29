@@ -3,10 +3,12 @@
   <div class="col-sm-8 col-xs-offset-2">
    <div class="panel panel-danger">
     <div class="panel-heading">
+     
      <h2 class="panel-title">
        <%= pluralize(obj.errors.count, "error") %>
        prhibeted this article from being saved
      </h2>
+     
      <div class="panel-body">
       <ul>
        <% obj.errors.full_messages.each do |msg| %>
@@ -14,6 +16,7 @@
        <% end %>
       </ul>
      </div>
+     
     </div>
    </div>
   </div>
