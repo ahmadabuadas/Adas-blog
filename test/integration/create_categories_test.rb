@@ -2,6 +2,8 @@ require 'test_helper'
 
 class CreateCategoriesTest < ActionDispatch::IntegrationTest 
     
+   
+    
     test "get new category from create category" do 
         get new_category_path
         assert_template 'categories/new'
