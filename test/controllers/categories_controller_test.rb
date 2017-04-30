@@ -6,6 +6,7 @@ class CategoriesControllerTest < ActionController::TestCase
         @category = Category.create(name: "sports")
         @user = User.create(name: "ahmad", email: "ahmad.a@yahoo.com", password: "ahmad", admin: true)
     end
+    
     test "should be categories index" do
          get :index
          assert_response :success
